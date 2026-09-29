@@ -33,30 +33,34 @@ public class CardTrick {
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
         //Then report the result here
-        System.out.println("enter a value (1-13)");
+        /*System.out.println("enter a value (1-13)");
         int val = num.nextInt();
         System.out.println("enter a suit (Hearts, Diamonds, Spades, Clubs)");
         String suit = text.nextLine();
         
         Card user = new Card();
         user.setValue(val);
-        user.setSuit(suit);
+        user.setSuit(suit);*/
+
+        Card luckyCard = new Card();
+        luckyCard.setSuit("Clubs");
+        luckyCard.setValue(2);
         
-        if(user.getSuit().equals("not") || user.getValue() == -1){
-            System.out.println("non valid card entered try again");
+        /*if(user.getSuit().equals("not") || user.getValue() == -1){
+            System.out.println("non valid card entered try again");*/
         }
         else {
             boolean found = false;
             System.out.println("the contents of the magic hand are");
             for(Card c: magicHand){
                 System.out.println(c);
-                if(user.Equals(c))
+                if(luckyCard.Equals(c))
                     found = true;
             }
             if(found)
-                System.out.println("Your card is in the hand");
+                System.out.println("the luckyCard is in the hand");
             else
-                System.out.println("Your card is not in the hand");
+                System.out.println("the luckyCard is not in the hand");
         }
         
         // add one luckcard hard code 2,clubs

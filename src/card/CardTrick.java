@@ -48,6 +48,7 @@ public class CardTrick {
         
         /*if(user.getSuit().equals("not") || user.getValue() == -1){
             System.out.println("non valid card entered try again");*/
+        //test
         }
         else {
             boolean found = false;

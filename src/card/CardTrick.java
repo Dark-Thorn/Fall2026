@@ -47,7 +47,9 @@ public class CardTrick {
         }
         else {
             boolean found = false;
+            System.out.println("the contents of the magic hand are");
             for(Card c: magicHand){
+                System.out.println(c);
                 if(user.Equals(c))
                     found = true;
             }
